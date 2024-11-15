@@ -61,7 +61,6 @@ Set-ExplorateurAfficherFichiersCaches
 Set-ExplorateurDevelopperDossierOuvert
 Set-ExplorateurChangerVueCePC
 Set-ExplorateurChangerVueAccesRapide
-Set-ExplorateurCacherObjet3D
 
 Write-Host ""
 Clear-Windows

@@ -433,10 +433,3 @@ Function Set-ExplorateurChangerVueAccesRapide {
     Write-Host "--------------------------------------------"
     Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "LaunchTo" -ErrorAction SilentlyContinue
 }
-
-# Cacher l'icône 'Objet 3D' dans l'explorateur de fichier
-Function Set-ExplorateurCacherObjet3D {
-    Write-Host "Cacher l'icone 'Objet 3D' dans l'explorateur de fichier..."
-    Write-Host "--------------------------------------------"
-    Remove-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}" -Recurse -ErrorAction SilentlyContinue
-}
